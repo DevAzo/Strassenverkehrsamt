@@ -12,6 +12,10 @@ on:
         - debug 
       tags:
         description: 'Test scenario tags'
+      env:
+        description: 'Umgebung'   
+        type: environment
+        required: true 
     
       
 
