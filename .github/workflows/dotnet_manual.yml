@@ -28,10 +28,7 @@ jobs:
       - name: Dinge anzeigen
       - run: |
           echo "Log level: $LEVEL"
-          echo "Tags: $TAGS"
-           
-      - name: Anzeigen von standard Environment Variablen
-        run: | 
+          echo "Tags: $TAGS"                     
           echo "Github Actor: $GITHUB_ACTOR"
           echo "Github Ref: $GITHUB_REF"
           
