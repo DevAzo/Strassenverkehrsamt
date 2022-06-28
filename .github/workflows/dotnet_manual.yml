@@ -28,3 +28,8 @@ jobs:
           LEVEL: ${{ inputs.logLevel }}
           TAGS: ${{ inputs.tags }}
           ENVIRONMENT: ${{ inputs.environment }}
+          
+          if: steps.example.exitcode > 0
+           echo "nix gut"
+      
+          
