@@ -31,7 +31,7 @@ jobs:
           echo "Tags: $TAGS"
        
     
-      - name: Anzeigen von standard Environment
+      - name: Anzeigen von standard Environment Variablen
         run: | 
           echo "Github Actor: $GITHUB_ACTOR"
           echo "Github Ref: $GITHUB_REF"
