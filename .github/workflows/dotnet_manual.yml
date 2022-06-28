@@ -1,3 +1,5 @@
+name: Manual Start
+
 on: 
   workflow_dispatch:
     inputs:
@@ -11,13 +13,8 @@ on:
         - warning
         - debug 
       tags:
-        description: 'Test scenario tags'
-      env:
-        description: 'Umgebung'   
-        type: environment
-        required: true 
-    
-      
+        description: 'Test scenario tags'    
+          
 
 jobs:
   log-the-inputs:
