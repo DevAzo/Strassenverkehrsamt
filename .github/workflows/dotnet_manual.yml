@@ -19,17 +19,19 @@ on:
 jobs:
   log-the-inputs:
     runs-on: ubuntu-latest
-    steps:
-      - name: "Dinge anzeigen"
-      - run: |
-          echo "Log level: $LEVEL"
-          echo "Tags: $TAGS"
-        env:
+    env:
           LEVEL: ${{ inputs.logLevel }}
           TAGS: ${{ inputs.tags }}
           ENVIRONMENT: ${{ inputs.environment }}
+          
+    steps:
+      - name: Dinge anzeigen
+      - run: |
+          echo "Log level: $LEVEL"
+          echo "Tags: $TAGS"
+       
     
-      - name: "Anzeigen von standard Evironment"
+      - name: Anzeigen von standard Environment
         run: | 
           echo "Github Actor: $GITHUB_ACTOR"
           echo "Github Ref: $GITHUB_REF"
