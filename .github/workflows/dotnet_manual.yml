@@ -23,8 +23,6 @@ jobs:
       - run: |
           echo "Log level: $LEVEL"
           echo "Tags: $TAGS"
-          echo "Environment: $ENVIRONMENT"
-          echo 'Hallo ${{ github.name }}' 
         env:
           LEVEL: ${{ inputs.logLevel }}
           TAGS: ${{ inputs.tags }}
