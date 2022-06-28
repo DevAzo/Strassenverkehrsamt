@@ -20,6 +20,7 @@ jobs:
   log-the-inputs:
     runs-on: ubuntu-latest
     steps:
+      - name: "Dinge anzeigen"
       - run: |
           echo "Log level: $LEVEL"
           echo "Tags: $TAGS"
@@ -27,6 +28,11 @@ jobs:
           LEVEL: ${{ inputs.logLevel }}
           TAGS: ${{ inputs.tags }}
           ENVIRONMENT: ${{ inputs.environment }}
+    
+      - name: "Anzeigen von standard Evironment"
+        run: | 
+          echo "Github Actor: $GITHUB_ACTOR"
+          echo "Github Ref: $GITHUB_REF"
           
         
       
