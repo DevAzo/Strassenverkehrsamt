@@ -17,7 +17,7 @@ on:
 
 jobs:
   log-the-inputs:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - run: |
           echo "Log level: $LEVEL"
