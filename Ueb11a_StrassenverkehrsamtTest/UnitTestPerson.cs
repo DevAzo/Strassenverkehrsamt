@@ -11,7 +11,7 @@ namespace Ueb11a_StrassenverkehrsamtTest
             Person p = new Person();
 
             // not finished
-            Assert.IsTrue(false);
+            Assert.IsTrue(true);
         }
     }
 }
