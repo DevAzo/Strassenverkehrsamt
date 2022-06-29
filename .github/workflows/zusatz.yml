@@ -1,0 +1,8 @@
+name: zusatz.yml
+
+runs-on: ubuntu-latest
+
+ steps:
+  - name: Unit Tests
+    run: dotnet test --no-build --verbosity normal
+ 
