@@ -14,6 +14,7 @@ namespace Ueb11a_Strassenverkehrsamt
         private static void Main(string[] args)
         {
             bool bRun = true;
+
             while (bRun)
             {
                 Console.WriteLine("Alle Fahrzeuge anzeigen:  a");
@@ -28,8 +29,9 @@ namespace Ueb11a_Strassenverkehrsamt
                         bool bRunSubMenu = true;
                         while (bRunSubMenu)
                         {
-                            Console.WriteLine("Beenden er Eingaben mit (j)");
+                            Console.WriteLine("Beenden er Eingaben mit (j) oder ENTER fuer weiter...");
                             var sEingabe = Console.ReadLine();
+
                             if (sEingabe.ToLower() == "j")
                             {
                                 bRunSubMenu = false;
@@ -53,7 +55,7 @@ namespace Ueb11a_Strassenverkehrsamt
                                 Console.Write("Kennzeichen eingeben: ");
 
                                 var sKennzeichen = Console.ReadLine();
-                                
+
                                 int.TryParse(sKennzeichen, out int nKennzeichen);
                                 fzh.Kennzeichen = nKennzeichen;
 
